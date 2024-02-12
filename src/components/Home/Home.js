@@ -48,11 +48,6 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      {/*
-      <Home2 />
-      <About />
-      <Projects />
-      */}
     </section>
   );
 }

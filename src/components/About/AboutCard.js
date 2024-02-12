@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
+import { FaStar } from "react-icons/fa";
 
 function AboutCard() {
   return (
@@ -8,33 +8,26 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
-            <br />
-            I am currently employed as a software developer at Juspay.
-            <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
+            Hi there! Thanks for visiting my portfolio! My name's Winson, and I'm a <span className="about-bold">junior at Stanford University</span> studying CS in the fields of <span className="about-bold">AI and Theory</span>. I'm also a <span className="about-bold">first-year masters student</span> studying Management Science & Engineering with a concentration in <span className="about-bold">computational finance</span>. As a fan of all things coding and theory, I love nothing more than building efficient programs that tackle difficult problems using innovative solutions.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
-          </p>
-          <ul>
+            Some other fun facts about me:
+            <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <FaStar/> I grew up in Apple Valley, CA ☀️
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+              <FaStar/> I play piano and compose/arrange music 🎶
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <FaStar/> I love reading horror/thriller books 👻
+            </li>
+            <li className="about-activity">
+              <FaStar/> My fav colors are pink + orange (can you tell?) 🌇
             </li>
           </ul>
-
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
-          </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+            Feel free to send me any inquiries at <span className="about-bold">winsonc@stanford.edu</span>. I hope you enjoy the rest of my portfolio!
+            </p>
         </blockquote>
       </Card.Body>
     </Card>

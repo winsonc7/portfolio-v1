@@ -18,6 +18,10 @@ html {
   color: var(--imp-text-color) !important;
 }
 
+.about-bold {
+  color: #ff5100 !important;
+}
+
 button:focus {
   box-shadow: none !important;
 }
@@ -33,18 +37,36 @@ button:focus {
   height: 100%;
   z-index: 999999;
   background-color: #ffca61;
-  background-image: url(./Assets/pre.svg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  background-image: url(./Assets/infinite-spinner.svg);
+  width: 200px;
+  height: 100px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
+.loading-text {
+  margin-top: 10px;
+  font-size: 2.5em !important;
+  text-align: center;
+  color: #ffffff; /* Adjust text color as needed */
+  padding: 10px;
+}
+
 #preloader-none {
   opacity: 0;
+  display: none;
 }
 
 #no-scroll {
-  overflow: hidden;
-  height: 100vh;
+  overflow: hidden !important;
+  height: 0 !important;
 }
 
 /* --------- */
@@ -52,24 +74,30 @@ button:focus {
 /* --------- */
 
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 0px !important;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: #ffffff;
+  height: 0px !important;
+  width: 0px !important;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
-  border-radius: 12px;
+  background: rgba(255, 190, 121, 0.959);
+  border-radius: 0px;
+  height: 0px !important;
+  width: 0px !important;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
-  border-radius: 12px;
+  background: rgba(255, 190, 121, 0.959);
+  border-radius: 0px;
+  height: 0px !important;
+  width: 0px !important;
 }
 
 /* --------- */
@@ -144,7 +172,7 @@ button:focus {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: #181a27 !important;
+    background-color: #ff9500 !important;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
@@ -567,18 +595,33 @@ button:focus {
 }
 
 .tech-icons {
-  font-size: 4.5em !important;
+  font-size: 4em !important;
   margin: 15px !important;
-  padding: 10px !important;
+  padding-bottom: 2% !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  border: 2px solid rgb(255, 140, 73) !important;
   vertical-align: middle !important;
   text-align: center !important;
-  border-radius: 5px !important;
+  border-radius: 10px !important;
   display: table !important;
-  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  box-shadow: 4px 5px 4px 3px rgba(224, 105, 0, 0.559) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
+}
+
+.label {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 1px;
+  width: 100%;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 0.4em;
 }
 
 @media (max-width: 767px) {
@@ -588,13 +631,18 @@ button:focus {
 }
 
 .tech-icons:hover {
-  transform: scale(1.05) !important;
+  transform: scale(1.1) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  border: 2.2px solid rgba(255, 51, 51, 0.883) !important;
 }
+
+.tech-icons:hover .label {
+  opacity: 1;
+}
+
 .tech-icon-images {
-  padding: 20px !important;
-  line-height: 1.6 !important;
+  padding: 10px !important;
+  line-height: 6.6 !important;
 }
 
 .quote-card-view {

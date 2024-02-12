@@ -5,14 +5,21 @@ import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
+import RedGeo from "../../Assets/redgeo.png";
 import Toolstack from "./Toolstack";
 
 function About() {
   return (
     <Container fluid className="about-section">
-      <Particle />
       <Container>
+        <Particle />
         <Row style={{ justifyContent: "center", padding: "10px" }}>
+          <Col
+            md={5}
+            style={{paddingBottom: "50px" }}
+            className="about-img">
+            <img src={RedGeo} alt="about" className="img-fluid" />
+          </Col>
           <Col
             md={7}
             style={{
@@ -21,31 +28,22 @@ function About() {
               paddingBottom: "50px",
             }}
           >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I'M</strong>
+            <h1 style={{ fontSize: "2.5em", paddingBottom: "20px" }}>
+              More About Me
             </h1>
             <Aboutcard />
           </Col>
-          <Col
-            md={5}
-            style={{ paddingTop: "120px", paddingBottom: "50px" }}
-            className="about-img"
-          >
-            <img src={laptopImg} alt="about" className="img-fluid" />
-          </Col>
         </Row>
         <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
+          Programming Languages
         </h1>
 
         <Techstack />
 
         <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
+          Libraries/Software Tools
         </h1>
         <Toolstack />
-
-        <Github />
       </Container>
     </Container>
   );

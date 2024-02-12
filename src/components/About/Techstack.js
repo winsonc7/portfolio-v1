@@ -1,21 +1,16 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
 import {
   DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiMongodb,
   DiPython,
-  DiGit,
-  DiJava,
+  DiHtml5,
+  DiCss3,
+  DiSwift,
 } from "react-icons/di";
 import {
-  SiRedis,
-  SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
+  SiCplusplus,
+  SiCsharp,
+  SiRstudio
 } from "react-icons/si";
 import { TbBrandGolang } from "react-icons/tb";
 
@@ -23,46 +18,36 @@ function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+        <DiPython />
+        <div className="label">Python</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiCplusplus />
+        <div className="label">C/C++</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiCsharp />
+        <div className="label">C#</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
+        <div className="label">Javascript</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
+        <DiHtml5 />
+        <div className="label">HTML</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
+        <DiCss3 />
+        <div className="label">CSS</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
+        <DiSwift />
+        <div className="label">Swift</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
+        <SiRstudio />
+        <div className="label">R</div>
       </Col>
     </Row>
   );

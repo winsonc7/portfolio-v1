@@ -11,6 +11,7 @@ import {
   AiFillGithub
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { HiOutlineMusicNote } from "react-icons/hi"
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -80,11 +81,24 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
+                as={Link}
+                to="/funstuff"
+                onClick={() => updateExpanded(false)}
+              >
+                <HiOutlineMusicNote
+                  style={{ marginBottom: "5px" }}
+                />{" "}
+                Fun Stuff
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
                 href="https://www.linkedin.com/in/chengwinson/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaLinkedinIn style={{ marginBottom: "5px" }} /> LinkedIn
+                <FaLinkedinIn style={{ marginBottom: "5px" }} />
               </Nav.Link>
             </Nav.Item>
 
@@ -94,7 +108,7 @@ function NavBar() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <AiFillGithub style={{ marginBottom: "5px" }} /> Github
+                <AiFillGithub style={{ marginBottom: "5px" }} />
               </Nav.Link>
             </Nav.Item>
           </Nav>
