@@ -15,7 +15,7 @@ function Particle() {
             }
           },
           "color": {
-            "value": "#a8004f"
+            "value": "#ffffff"
           },
           "shape": {
             "type": "circle",
@@ -55,7 +55,7 @@ function Particle() {
           "line_linked": {
             "enable": true,
             "distance": 100,
-            "color": "#a8004f",
+            "color": "#ffffff",
             "opacity": 1.4,
             "width": 1.2
           },
