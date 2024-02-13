@@ -487,6 +487,10 @@ button:focus {
 /* --------- */
 /* Projects */
 /* --------- */
+.card-body {
+  align-self: center !important;
+}
+
 .project-section {
   position: relative !important;
   height: 100%;
@@ -519,35 +523,30 @@ button:focus {
   box-shadow: 0 4px 4px 5px rgba(232, 109, 15, 0.881) !important;
 }
 
-.blog-card {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
-  padding-left: 25px !important;
-  padding-right: 25px !important;
-  height: auto !important;
-}
-
-.blog-card-view {
+.funstuff-card-view-left {
+  box-shadow: 0 4px 5px 3px rgba(220, 101, 17, 0.744) !important;
+  color: white !important;
   background-color: transparent !important;
-  box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
-  color: white !important;
+  opacity: 1 !important;
   transition: all 0.5s ease 0s !important;
-  height: 100% !important;
+  width: 100% !important;
+  flex-direction: row !important;
+  margin-top: 50px !important;
+  margin-bottom: 50px !important;
+  margin-right: 100px !important;
 }
 
-.blog-link {
+.funstuff-card-view-right {
+  box-shadow: 0 4px 5px 3px rgba(220, 101, 17, 0.744) !important;
   color: white !important;
-  text-decoration: none !important;
-}
-
-.blog-link:hover {
-  cursor: pointer !important;
-}
-
-.blog-card-view:hover {
-  transform: scale(1.02) !important;
-  overflow: hidden !important;
-  box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
+  background-color: transparent !important;
+  opacity: 1 !important;
+  transition: all 0.5s ease 0s !important;
+  width: 100% !important;
+  flex-direction: row-reverse !important;
+  margin-top: 50px !important;
+  margin-bottom: 50px !important;
+  margin-right: 100px !important;
 }
 
 .card-img-top {
@@ -556,6 +555,15 @@ button:focus {
   border-radius: 30px !important;
   width: 100%;
   height: 200px; /* Set the desired height */
+  object-fit: cover;
+}
+
+.card-img-fun {
+  padding: 20px !important;
+  opacity: 0.9 !important;
+  border-radius: 30px !important;
+  width: 400px;
+  height: 100%; /* Set the desired height */
   object-fit: cover;
 }
 
@@ -584,6 +592,16 @@ button:focus {
   color: white !important;
   font-size: 2.3em !important;
   font-weight: 500 !important;
+  padding-top: 10px !important;
+}
+
+.funstuff-heading {
+  background-image: linear-gradient(90deg, #ff4d00, #ff0048);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 2.3em;
+  font-weight: 500;
   padding-top: 10px !important;
 }
 

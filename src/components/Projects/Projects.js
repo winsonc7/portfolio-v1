@@ -98,7 +98,7 @@ function Projects() {
               imgPath={Blender}
               isBlog={false}
               title="Horror VR Game"
-              description="Worked in a team of three to develop a corporate horror VR game for a final class project. Focused on storyboarding, character and asset models, and music/sound design. This project had a steep learning curve for me, but was super fun and rewarding! I'll definitely be making more games in the future. Used Unity, C#, Blender."
+              description="Worked in a team of three to develop a corporate horror VR game for final course project. Focused on storyboarding, character and asset models, and music/sound design. This project had a steep learning curve for me, but was super fun and rewarding in the end! I'll definitely be making more games in the future. Used Unity, C#, Blender."
               ghLink="https://github.com/annien23/CS11SI-Project/tree/main"
             />
           </Col>

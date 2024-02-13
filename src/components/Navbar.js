@@ -79,7 +79,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            {/*
+            
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -92,7 +92,7 @@ function NavBar() {
                 Fun Stuff
               </Nav.Link>
             </Nav.Item>
-            */}
+            
             
 
             <Nav.Item>
