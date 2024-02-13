@@ -8,7 +8,7 @@ function Particle() {
       params={{
         "particles": {
           "number": {
-            "value": 50,
+            "value": 80,
             "density": {
               "enable": true,
               "value_area": 700
@@ -56,7 +56,7 @@ function Particle() {
             "enable": true,
             "distance": 100,
             "color": "#ffffff",
-            "opacity": 1.4,
+            "opacity": 1,
             "width": 1.2
           },
           "move": {

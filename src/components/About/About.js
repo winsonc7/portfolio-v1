@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Particle from "../Particle";
+import Particle from "../ParticleLighter";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
@@ -12,11 +12,11 @@ function About() {
   return (
     <Container fluid className="about-section">
       <Container>
-        <Particle />
         <Row style={{ justifyContent: "center", padding: "10px" }}>
+          <Particle/>
           <Col
             md={5}
-            style={{paddingBottom: "50px" }}
+            style={{paddingBottom: "50px", zIndex: 1 }}
             className="about-img">
             <img src={RedGeo} alt="about" className="img-fluid" />
           </Col>
