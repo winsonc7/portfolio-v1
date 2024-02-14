@@ -4,7 +4,6 @@ import Particle from "../ParticleLighter";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
 import RedGeo from "../../Assets/redgeo.png";
 import Toolstack from "./Toolstack";
 
