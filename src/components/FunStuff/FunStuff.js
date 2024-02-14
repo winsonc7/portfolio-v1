@@ -8,7 +8,7 @@ import Bach from "../../Assets/bach.jpg";
 import Paradox from "../../Assets/paradox.jpg";
 import AStar from "../../Assets/astar.png";
 
-function Projects() {
+function FunStuff() {
   return (
     <Container fluid className="project-section">
       <Container>
@@ -37,7 +37,7 @@ function Projects() {
             <FunStuffCardRight
               imgPath={Paradox}
               title="Banach-Tarski Paradox"
-              description="Do you like having your brain hurt? Me too. There must be some masochistic streak that runs through all computer science theorists, I think. Anyways, this is one of my favorite videos on the internet: it builds foundation with the Hilbert's Hotel paradox, gives an intuitive explanation of the diagonalization argument, and reaches a mind-boggling results thanks to the mysterious workings of uncountable infinities. Enjoy!"
+              description="Do you like having your brain hurt? Me too. This is one of my favorite videos on the internet: it builds foundation with the Hilbert's Hotel paradox, gives an intuitive explanation of the diagonalization argument, and presents a mind-boggling proof thanks to the mysterious workings of uncountable infinity. Enjoy!"
               Link="https://www.youtube.com/watch?v=s86-Z-CbaHA&t=1289s"
             />
           </Row>
@@ -47,4 +47,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default FunStuff;

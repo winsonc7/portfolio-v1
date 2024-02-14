@@ -2,12 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import pfp from "../../Assets/pfp-3.png";
 import Particle from "../Particle";
-import Home2 from "./Home2";
 import Type from "./TypeLoop";
 import TypingAnimation from "./TypeAnimation";
 import TypeIntro from "./TypeIntro";
-import About from "../About/About"
-import Projects from "../Projects/Projects"
 
 function Home() {
   return (
@@ -20,7 +17,7 @@ function Home() {
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Welcome!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
-                  👋🏻
+                  👋🏼
                 </span>
               </h1>
 
@@ -37,12 +34,11 @@ function Home() {
               </div>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
+            <Col md={5} style={{ paddingBottom: 20}}>
               <img
                 src={pfp}
                 alt="home pic"
                 className="pfp"
-                style={{ maxHeight: "450px" }}
               />
             </Col>
           </Row>
