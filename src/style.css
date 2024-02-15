@@ -280,7 +280,7 @@ button:focus {
 }
 
 .home-header {
-  padding-top: 80px !important;
+  top: 50%;
 }
 
 .home-section {
