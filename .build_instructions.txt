@@ -1,0 +1,4 @@
+After pushing changes to main, run these commands to deploy:
+
+npm run build
+npm run deploy
