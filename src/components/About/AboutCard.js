@@ -14,7 +14,7 @@ function AboutCard() {
             Some other fun facts about me:
             <ul>
             <li className="about-activity">
-              <FaStar/> I grew up in Apple Valley, CA ☀️
+              <FaStar/> I grew up in Apple Valley, CA 🌵
             </li>
             <li className="about-activity">
               <FaStar/> I play piano and compose/arrange music 🎶
