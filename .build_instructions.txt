@@ -1,3 +1,5 @@
 After pushing changes to main, run command(s) to deploy:
 
+conda activate portfolio
+(npm install react-scripts)
 npm run deploy
